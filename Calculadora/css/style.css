@@ -1,0 +1,63 @@
+/* variables */
+:root{
+
+}
+
+/* globales */
+html{
+  font-size: 65,2%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e0e3eb;
+}
+.container{
+  position: relative;
+  max-width: 30rem;
+  width: 100%;
+  border-radius: 1.2rem;
+  padding: 1rem 2rem 2rem;
+  background: #fff;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+}
+.display{
+  height: 8rem;
+  width: 100%;
+  margin-bottom: 1rem;
+  outline: none;
+  border: none;
+  font-size: 25px;
+  text-align: right;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(4,1fr);
+}
+.buttons button{
+  padding: 1rem;
+  border-radius: .6rem;
+  border:none;
+  font-size: 2rem;
+  cursor: pointer;
+  background-color: #eee;
+}
+.buttons button:active{
+  transform: scale(.99);
+}
+.operator{
+  color: #2f9fff;
+}
