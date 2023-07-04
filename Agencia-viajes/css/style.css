@@ -1,0 +1,296 @@
+/* variables */
+:root{
+  --main-font:'Roboto Condensed', sans-serif;
+  --container: 120rem;
+  --font-color: #fff;
+  --font-color-2: #266371;
+}
+
+/* globales */
+html{
+  font-size: 65.2%;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+body{
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+
+}
+
+.section{
+  background-image: url(https://raw.githubusercontent.com/Marco126350/Repositorio/gh-pages/Agencia-viajes/Assets/img/bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  align-items: center;
+}
+
+
+/*
+
+*********MENU***********
+
+*/
+.menu{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container{
+  margin: 0 auto;
+  max-width: var(--container);
+}
+
+.logo{
+  color: var(--font-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+#menu{
+  visibility: hidden;
+}
+.menu-icono{
+  width: 2.5rem;
+}
+.menu label{
+  cursor: pointer;
+  visibility: hidden;
+}
+
+.menu .navbar ul li{
+  position: relative;
+  float: left;
+}
+.menu .navbar ul li a{
+  font-size: 2rem;
+  padding: 2rem;
+  color: var(--font-color);
+  display: block;
+  font-weight: bold;
+}
+
+.menu .navbar ul li a:hover{
+  color: var(--font-color-2);
+}
+
+.icons{
+  display: flex;
+}
+.icons i{
+  font-size: 2.5rem;
+  color: var(--font-color);
+  margin-right: 1.5rem;
+  cursor: pointer;
+}
+.icons i:hover{
+  color: var(--font-color-2);
+}
+
+
+
+
+/*
+
+*********CONTENIDO***********
+
+*/
+.section-txt{
+  width: 40%;
+}
+.section-txt h1{
+  font-size: 7rem;
+  line-height: 8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--font-color-2);
+  margin-bottom: 2.5rem;
+  font-family: var(--main-font);
+  text-align: center;
+}
+.section-txt p{
+  font-size: 1.8rem;
+  color: var(--font-color);
+  font-weight: 500;
+  margin-bottom: 2.5rem;
+  background-color: var(--font-color-2);
+  padding: 1rem;
+  border-radius: 2rem;
+  opacity: 70%;
+  text-align: center;
+}
+.btn-1{
+  display: inline-block;
+  width: 20rem;
+  padding: 1.3rem 2rem;
+  border-radius: 2.5rem;
+  text-transform: uppercase;
+  color: var(--font-color);
+  background-color: #099fa6;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0, 0.4);
+  font-family: var(--main-font);
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+.btn-1:hover{
+  background-color: var(--font-color-2);
+}
+
+
+/*
+
+*********IMAGENES***********
+
+*/
+.images{
+  width: 55vw;
+  height: 38rem;
+  position: absolute;
+  right: 0;
+}
+.swiper{
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.swiper-slide img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1.5rem;
+}
+.swiper-slide h3{
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  color: var(--font-color);
+  font-family: var(--main-font);
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+/* ROWS */
+.rows{
+  width: 18rem;
+  position: absolute;
+  right: 21vw;
+  bottom: 15rem;
+}
+.swiper-button-prev{
+  height: 5rem;
+  width: 5rem;
+  border: .2rem solid var(--font-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.swiper-button-next{
+  height: 5rem;
+  width: 5rem;
+  border: .2rem solid var(--font-color);
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+.swiper-button-prev::after{
+  font-size: 2.5rem;
+  color: var(--font-color);
+}
+.swiper-button-next::after{
+  font-size: 2.5rem;
+  color: var(--font-color);
+}
+
+
+
+/* MEDIA-QUERIES */
+
+@media (max-width: 991px) {
+   .menu{
+    padding: 3rem;
+   }
+   .menu label{
+    visibility: visible;
+   }
+  .menu-icono{
+      position: absolute;
+      right: 2rem;
+      top: 4rem;
+  }
+   .menu .navbar{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    right: 0;
+    background-color: #3f3f3f48;
+    backdrop-filter: blur(.5rem);
+    visibility: hidden;
+    /* text-align: center; */
+   }
+   .menu .navbar ul{
+    display: flex;
+    justify-content: space-between;
+   }
+   .menu .navbnar ul li{
+    width: 100%;
+   }
+   #menu:checked ~ .navbar{
+    visibility: visible;
+   }
+   .icons{
+    visibility: hidden;
+   }
+   .section{
+    padding: 8rem 3rem 5rem 3rem;
+    align-items: flex-start;
+    flex-direction: column;
+    align-items: center;
+   }
+   .section-txt{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3rem;
+   }
+   .section-txt h1{
+    margin-bottom: 1rem;
+   }
+   .images{
+    position: initial;
+    width: 30rem;
+    height: 30rem;
+   }
+   .rows{
+    visibility: hidden;
+   }
+}
+@media (max-width: 580px ) {
+   .menu .navbar ul{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .menu .navbar ul li a{
+    height: 5.5rem;
+   }
+}

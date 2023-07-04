@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- google-fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <!-- end-google-fonts -->
+
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <!-- end-swiper -->
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end-font-awesome -->
+
+  <!-- normalize -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- end-normalize -->
+
+  <!-- style -->
+    <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end-style -->
+  <title>Landing Page</title>
+</head>
+<body>
+
+  <!-- CONTENEDOR -->
+  <section class="section">
+
+    <!-- MENU -->
+    <div class="menu container">
+      <a href="#" class="logo">Destino</a>
+      <input type="checkbox" id="menu">
+      <label for="menu">
+          <img src="Assets/img/menu.png" class="menu-icono"  alt="menu">
+      </label>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Productos</a></li>
+          <li><a href="#">Reservaciones</a></li>
+        </ul>
+      </nav>
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </div>
+    <!-- END-MENU -->
+
+    <!-- CONTENIDO-TEXTO -->
+    <section class="section-content container">
+      <div class="section-txt">
+        <h1>Elige tu playa favorita</h1>
+        <p>Sumérjanse en la belleza de nuestras aguas cristalinas, donde podrán nadar, hacer snorkel y descubrir un mundo submarino lleno de colores y vida marina. Relájense bajo el cálido sol mientras se broncean en nuestras suaves y doradas arenas. Las olas perfectas de nuestras playas son ideales para los amantes del surf y los deportes acuáticos.</p>
+        
+        <a href="#" class="btn-1">Seccion menu</a>
+      </div>
+    </section>
+    <!-- END-CONTENIDO-TEXTO -->
+    
+
+    <!-- IMAGENES -->
+    <section class="images">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/1.jpg" alt="playa">
+            <h3>Playa</h3>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/2.jpg" alt="hotel">
+            <h3>Hotel</h3>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/3.jpg" alt="naturaleza">
+            <h3>Naturaleza</h3>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/4.jpg" alt="canoas">
+            <h3>Canoas</h3>
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/5.jpg" alt="lanchas">
+            <h3>Lanchas</h3>
+          </div>
+  
+        </div>
+      </section>
+      
+      <!-- ROWS -->
+      <section class="rows">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+    </article>
+    
+    
+  </section>
+  <!-- END-IMAGENES -->
+  
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- end-swiper -->
+    <!-- app.js -->
+    <script src="js/app.js"></script>
+    <!-- end-app.js -->
+  </body>
+</html>
