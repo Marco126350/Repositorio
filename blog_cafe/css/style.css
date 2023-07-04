@@ -70,7 +70,7 @@ img{
   ****************HEADER*************
    */
    .header{
-     background-image: url(https://github.com/Marco126350/Repositorio/blob/gh-pages/blog_cafe/Assets/img/banner.webp);
+     background-image: url(https://raw.githubusercontent.com/Marco126350/Repositorio/gh-pages/blog_cafe/Assets/img/banner.webp);
      height: 60rem;
      background-size: cover;
      background-repeat: no-repeat;
@@ -273,7 +273,7 @@ img{
 ****************CURSOS*************
  */
  .contacto-bg{
-   background-image: url(/Assets/img/contacto.jpg);
+   background-image: url(https://raw.githubusercontent.com/Marco126350/Repositorio/gh-pages/blog_cafe//Assets/img/contacto.jpg);
    height: 40rem;
   background-size: cover;
   background-repeat: repeat;
