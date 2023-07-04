@@ -10,7 +10,7 @@ este es un repositorio de mis proyectos de front-end
 
 -[Restaurante-italiano](https://Marco126350.github.io/Repositorio/Restaurante)
 
--[Clon Airbnb](https://Marco126350.github.io/Repositorio/clon-Airbnb)
+-[Clon Airbnb](https://Marco126350.github.io/Repositorio/clon-Airb)
 
 -[Agencia de viajes](https://Marco126350.github.io/Repositorio/Agencia-viajes)
 

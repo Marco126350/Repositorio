@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- normalize -->
+  <link rel="preload" href="css/normalize.css" as="style">
+  <link rel="stylesheet" href="css/normalize.css">
+  <!-- end-normalize -->
+
+  <!-- swiper -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <!-- end-swiper -->
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- end-font-awesome -->
+
+  <!-- style -->
+    <link rel="preload" href="css/style.css" as="style">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- end-style -->
+  <title>Clon-airbnb</title>
+</head>
+<body>
+ 
+   <!-- estancias -->
+  <div class="contenedor-estancias">
+    <div class="estancias">
+    <p class="equis-est">x</p>
+    <div class="estancias__experiencias flex-row">
+      <p>Estancias</p>
+      <p>Experiencias</p>
+    </div>
+    <div class="estancias__viajar box-shadow border-r-1rm">
+      <p>¿A donde quieres viajar?</p>
+      <div class="estancias__viajar-busqueda border-r-1rm">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Buscar destinos">
+      </div>
+
+        <div class="continentes flex-row">
+          <div>
+            <img src="Assets/img/europa.webp" alt="europa">
+            <p>Europa</p>
+          </div>
+          <div>
+            <img src="Assets/img/españa.webp" alt="España">
+            <p>España</p>
+          </div>
+          <div>
+            <img src="Assets/img/eu.webp" alt="E.U">
+            <p>E.U</p>
+          </div>
+          <div>
+            <img src="Assets/img/sudamerica.webp" alt="Sudamerica">
+            <p>Sudamerica</p>
+          </div>
+          <div>
+            <img src="Assets/img/canada.webp" alt="Canada">
+            <p>Canada</p>
+          </div>
+        </div>
+
+    </div>
+    <div class="fechas box-shadow border-r-1rm flex-row">
+      <p class="opacity-5">Fechas</p>
+      <p>Agregar fechas</p>
+    </div>
+    <div class="huespedes box-shadow border-r-1rm flex-row">
+      <p class="opacity-5">Huéspedes</p>
+      <p>Agregar huéspedes</p>
+    </div>
+
+    <div class="footer-estancia flex-row">
+      <p class="footer-estancia__izquierda">Borrar todo</p>
+      <p class="footer-estancia__derecha  btn-red"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</p>
+    </div>
+  </div>
+</div>
+<!-- end-estancias -->
+
+<!-- estancias-desktop -->
+<div class="estancias desktop">
+  
+</div>
+
+  <!-- filtros -->
+<div class="filtros-background-desk">
+  <div class="contenedor-filtros ">
+    <div class="filtros">
+    <p class="equis-filtr">x</p>
+    <div class="filtros__experiencias flex-row">
+      <p>Filtros</p>
+    </div>
+    <div class="filtros__viajar">
+      <img src="Assets/img/filtros.webp" alt="">
+    </div>
+    <div class="filtros-texto">
+      <div class="tipo-lugar">
+        <p class="text-bold">Tipo de lugar</p>
+        <div class="tipo-lugar__tabla flex-row border-r-1rm">
+          <div class="tipo-lugar__informacion">
+            <p class="text-bold">Cualquier tipo</p>
+            <p>$2,258 MXN en promedio</p>
+          </div>
+          <div class="tipo-lugar__informacion">
+            <p class="text-bold">Habitacion</p>
+            <p>$1,254 MXN en promedio</p>
+          </div>
+          <div class="tipo-lugar__informacion">
+            <p class="text-bold">Alojamiento</p>
+            <p>$4,238 MXN en promedio</p>
+          </div>
+        </div>
+        <p>Busca habitaciones, alojamientos y mucho más. Los precios promedio por noche no incluyen tarifas ni impuestos.</p>
+        <br>
+        <hr>
+        <p class="text-bold">Rango de precios</p>
+        <img src="Assets/img/grafica-barra.png" alt="grafica de barra">
+    
+        <div class="min-max flex-row">
+          <div class="min">
+            <p>Minimo</p>
+            <p class="text-bold">$ 170</p>
+          </div>
+          <div>
+            <p>-</p>
+          </div>
+          <div class="max">
+            <p>Maximo</p>
+              <p class="text-bold">$ 4300+</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-filtros flex-row">
+      <p class="footer-filtros__izquierda">Quitar filtros</p>
+      <p class="footer-filtros__derecha  btn-black">Mostrar 657 alojamientos</p>
+    </div>
+  </div>
+</div>
+</div>
+<!-- filtros -->
+
+<!-- header -->
+<header>
+  <div class="header">
+  <a href="index.html"><img src="Assets/img/logo.webp" alt="logo-airbnb"></a>
+    <div class="busqueda">
+      <p>Cualquier lugar</p>
+      <p>Cualquier semana</p>
+      <p>¿Cuantos?  <i class="fa-solid fa-magnifying-glass btn-red"></i></p>
+    </div>
+    <div class="busqueda-desktop-click">
+      <p>Estancias</p>
+      <p class="bdc-hover">Experiencias</p>
+      <p class="bdc-hover">Experiencias en linea</p>
+      <div class="opciones-busqueda flex-row box-shadow">
+        <p class="box-shadow">Destino <br> <span>Buscar destinos</span></p>
+        <p class="opciones-busqueda-hover">Llegada <br> <span>Agregar fe...</span></p>
+        <p class="opciones-busqueda-hover">Salida <br> <span>Agregar fe...</span></p>
+        <p class="opciones-busqueda-hover">Huespedes <br><span>¿Cuantos?</span></p>
+        <p class="btn-red"> <i class="fa-solid fa-magnifying-glass"></i> Buscar</p>
+        <div class="regiones">
+          <p>Buscar por region</p>
+             <div class="continentes-busqueda">
+                <div>
+                  <img src="Assets/img/europa.webp" alt="europa">
+                  <p>Europa</p>
+                </div>
+                <div>
+                  <img src="Assets/img/españa.webp" alt="España">
+                  <p>España</p>
+                </div>
+                <div>
+                  <img src="Assets/img/eu.webp" alt="E.U">
+                  <p>E.U</p>
+                </div>
+
+                <div>
+                   <img src="Assets/img/sudamerica.webp" alt="Sudamerica">
+                   <p>Sudamerica</p>
+                </div>
+                <div>
+                 <img src="Assets/img/canada.webp" alt="Canada">
+                 <p>Canada</p>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="login">
+      <p>Pon tu casa en Airbnb</p>
+      <i class="fa-solid fa-globe"></i>
+      <div class="login__registro">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-regular fa-circle-user"></i>
+        <div class="login__registrate box-shadow">
+          <p>Registrate</p>
+          <p>Iniciar sesion</p>
+          <hr>
+          <p>Pon tu casa en Airbnb</p>
+          <p>Ayuda</p>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- header --mobile -->
+      <div class="login__mobile flex-row box-shadow">
+        <div class="login__mobile-text">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <p>Cualquier lugar <br>
+          <span>Cualquier semana . ¿Cuántos?</span>
+        </p>
+        </div>
+        <i class="fa-solid fa-sliders filter-m"></i>
+      </div>
+  </div>
+</header>
+  <hr class="hr-header">
+  <!-- end-header -->
+
+  <!-- navegacion-lugar -->
+  <nav class="navegacion-lugar">
+    <div class="slider-content flex-row">
+    <div class="sliderr">
+      <img src="Assets/img/albercas.jpg" alt="albercas">
+      <p>Albercas increibles</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/habitaciones.jpg" alt="habitaciones">
+      <p>Habitaciones</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/playa.jpg" alt="playa">
+      <p>Frente a la playa</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/cabañas.jpg" alt="cabaña">
+      <p>Cabañas</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/tropical.jpg" alt="tropical">
+      <p>Tropical</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/vista-increible.jpg" alt="vista">
+      <p>Vista</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/estraordinarios.jpg" alt="extraordinarios">
+      <p>Extraordinarios</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/casa-campo.jpg" alt="casas de campo">
+      <p>Casas de campo</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/mansiones.jpg" alt="mansiones">
+      <p>Mansiones</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/en-lago.jpg" alt="En el lago">
+      <p>En el lago</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/camping.jpg" alt="camping">
+      <p>Camping</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/castillos.jpg" alt="castillos">
+      <p>Castillos</p>
+    </div>
+    <div class="sliderr">
+      <img src="Assets/img/cuevas.jpg" alt="cuevas">
+      <p>Cuevas</p>
+    </div>
+    </div>
+    <button class="prev-button"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="next-button"><i class="fa-solid fa-chevron-right"></i></button>
+    <p class="filter-d"> <i class="fa-solid fa-sliders"></i> Filtros</p>
+  </nav>
+  <!-- end-navegacion-lugar -->
+
+  <!-- seccion/impuestos -->
+  <section class="seccion-impuestos flex-row">
+    <div class="seccion-impuestos__parrafos">
+        <p>Mostrar el precio total</p>
+         <p>incluidas todas las tarifas sin contar los impuestos</p>
+    </div>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+        <i class="fa-solid fa-check"></i>
+    </label>
+  </section>
+  <!-- end-seccion/impuestos -->
+
+  <!-- main -->
+  <main>
+    <!-- maps -->
+    <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119478.58018537948!2d-105.30692620983336!3d20.640852153009398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842145635063c87f%3A0x79cfbf9985bf5274!2sPuerto%20Vallarta%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1ses-419!2sus!4v1687794044327!5m2!1ses-419!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!-- end-maps -->
+
+  <article class="imagenes">
+
+    <!-- imagenes 1 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 1 -->
+ 
+    <!-- imagenes 2 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 2 -->
+
+    <!-- imagenes 3 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 3 -->
+ 
+    <!-- imagenes 4 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 4 -->
+
+    <!-- imagenes 5 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 5 -->
+ 
+    <!-- imagenes 6 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 6 -->
+
+    <!-- imagenes 7 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 7 -->
+ 
+    <!-- imagenes 8 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 8 -->
+
+    <!-- imagenes 9 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 9 -->
+ 
+    <!-- imagenes 10 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 10 -->
+
+    <!-- imagenes 11 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img1.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img2.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img3.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img4.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img5.webp" alt="lanchas">
+          </div>
+        </div>
+        
+          <i class="fa-regular fa-heart corazon-main corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Puerto Vallarta, México <br>
+            <span>a 198 km de distancia <br>
+            5 noches . 21-26 de ago.</span> <br>
+            <span>$7,402 MXN <span>total sin impto.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>
+            4.91</p>
+          </section>
+    </section>
+    <!-- end-imagenes 11 -->
+ 
+    <!-- imagenes 12 -->
+    <section class="imagenes__imagen">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img6.webp" alt="playa">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img7.webp" alt="hotel">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img8.webp" alt="naturaleza">         
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img9.webp" alt="canoas">
+          </div>
+          
+          <div class="swiper-slide">
+            <img src="Assets/img/img10.webp" alt="lanchas">
+          </div>
+        </div>
+
+          <i class="fa-regular fa-heart corazon-main"></i>
+          <section class="rows">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </section>
+
+      </div>
+          <section class="imagenes__contenido">
+            <p>Costa Careyes, México <br>
+            <span>a 224 km de distancia <br>
+            21-26 de ago.</span> <br>
+            <span>$1,402 MXN <span>noche.</span></span>
+            </p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </section>
+    </section>
+    <!-- end-imagenes 12 -->
+    
+    
+  </article>
+    
+  </main>
+  <!-- end-main -->
+
+  <footer class="footer">
+   <div class="mapa-btn">
+    <p>Mapa <i class="fa-solid fa-map"></i></p>
+  </div> 
+    <div class="footer__contenido flex-row">
+
+         <a href="#">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <p>Explorar</p>
+         </a>
+        <a href="index.html">
+          <i class="fa-regular fa-heart"></i>
+          <p>Favoritos</p>
+        </a>
+        <a href="index.html">
+          <i class="fa-regular fa-circle-user"></i>
+          <p>Iniciar sesion</p>
+        </a>
+
+    </div>
+    <div class="footer__contenido-desk">
+      <p>© 2023 Airbnb, Inc. ·<a href="index.html">Privacidad</a> · <a href="index.html">Términos</a>· <a href="index.html">Mapa del sitio</a> · <a href="">Información de la compañía</a></p>
+      <p><i class="fa-solid fa-globe"></i><a href="index.html">Español(MX)</a> <a href="index.html">$MXN</a> <a href="index.html">Ayuda y recursos</a>
+</p>
+    </div>
+  </footer>
+  <!-- swiper -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- end-swiper -->
+
+  <!-- script -->
+  <script src="js/app.js" type="module"></script>
+  <!-- end-script -->
+</body>
+</html>
