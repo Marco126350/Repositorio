@@ -18,3 +18,5 @@ este es un repositorio de mis proyectos de front-end
 
 -[Calculadora](https://Marco126350.github.io/Repositorio/Calculadora)
 
+-[Mi curriculum vitae](https://Marco126350.github.io/Repositorio/MI-CV)
+
