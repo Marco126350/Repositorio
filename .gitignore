@@ -1,0 +1,14 @@
+FestivalMusical/node_modules
+FestivalMusical/src
+
+#todos los js
+FestivalMusical/*.js
+
+#todos los json
+FestivalMusical/*.json
+
+#archivos sueltos
+FestivalMusical/._.DS_Store
+FestivalMusical/._img
+FestivalMusical/._video
+FestivalMusical/.DS_Store
