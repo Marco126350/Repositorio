@@ -1,3 +1,5 @@
+//Festival Musical
+
 FestivalMusical/node_modules
 FestivalMusical/src
 
@@ -12,3 +14,12 @@ FestivalMusical/._.DS_Store
 FestivalMusical/._img
 FestivalMusical/._video
 FestivalMusical/.DS_Store
+
+
+//StudioBadDog
+
+StudioBadDog/src
+StudioBadDog/gulpfille.js
+StudioBadDog/*json
+StudioBadDog/basicos-bootstrapt.html
+StudioBadDog/node_modules
